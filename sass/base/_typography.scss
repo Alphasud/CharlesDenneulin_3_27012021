@@ -3,6 +3,7 @@ body {
     font-weight: 300;
     line-height: 1.5;
     color: $color-black;
+    background-color: $color-background-dark;
 }
 
 .heading-primary {
@@ -15,3 +16,21 @@ body {
             font-size: 3.5rem;
         }
 }
+
+.heading-secondary {
+    font-size: $title-font-size;
+}
+
+
+
+.fas.fa-mobile-alt {
+        font-size: 1.9rem;
+}
+.fas.fa-list-ul {
+        font-size: 1.6rem;
+}
+.fas.fa-store {
+        font-size: 1.5rem;
+}
+
+

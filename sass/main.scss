@@ -7,7 +7,8 @@
 @import "base/typography";
 @import "base/font";
 
-// @import "components/";
+@import "components/explanation-card";
+@import "components/restaurant-card";
 
 @import "layouts/header.scss";
 @import "layouts/footer.scss";

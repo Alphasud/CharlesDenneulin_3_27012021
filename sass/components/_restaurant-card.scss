@@ -1,0 +1,77 @@
+.restaurant-card {
+    border: 1px solid red;
+    height: 23rem;
+    width: 33rem;
+    border-radius: 17px;
+    margin : 0 auto;
+    &:nth-child(2) {
+        margin-top: 2rem;
+    }
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__link a {
+        display: contents;
+    }
+
+    &__picture {
+        position: relative;
+       
+        &__sticker {
+        position: absolute;
+        bottom: 11.5rem;
+        right: 1rem;
+        color: darken($color-tertiary, 33%);
+        font-weight: 400;
+        background-color: $color-tertiary;
+        padding: .3rem 1rem;
+        border-radius: 2px;
+        font-size: $default-font-size;
+        }
+    
+        img {
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        }
+    }
+
+    &__description {
+        position: relative;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+
+        &__title {
+            font-size: $default-font-size;
+            &__name {
+                font-weight: 700;
+            }
+            &__location {
+                font-weight: 300;
+            }
+        }
+
+        .fas.fa-heart {
+            position: absolute;
+            right: 2rem;
+            font-size: $title-font-size;
+            visibility: hidden;
+        }
+
+        .far.fa-heart {
+            position:absolute;
+            right: 2rem;
+            font-size: $title-font-size;
+            &:hover{
+                color: red;
+                .fas.fa-heart {visibility: visible;}
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.section-location {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: $default-font-size;
+    padding: 1rem 0;
+        
+        &__text {
+            margin-left: 1rem;
+            font-weight: 500;
+
+        }
+}
+
+.section-explore {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2.5rem 12%;
+    text-align: center;
+    background-color: $color-background-light;
+
+        &__title {
+           font-size: $title-font-size;
+        }
+
+        &__description {
+            font-size: $default-font-size;
+            font-weight: 300;
+        }
+
+        &__button {
+            cursor: pointer;
+            outline: none;
+            border-radius: 100px;
+            margin: 3rem auto;
+            border:none;
+            padding: 1.2rem 1.5rem;
+            font-size: $default-font-size;
+            color: $color-white;
+            background-color: $color-black;
+            box-shadow: $shadow-light;
+            transition: opacity .2s ease, box-shadow .2s ease-in-out, transform .2s ease-in-out;
+
+            &:active {
+                box-shadow: $shadow-dark;
+                transform: translateY(2px);
+            }
+
+            &--pink {
+                background: $color-primary;
+                background: -webkit-linear-gradient(bottom right, $color-primary, $color-secondary);
+                background: -moz-linear-gradient(bottom right, $color-primary, $color-secondary);
+                background: linear-gradient(to top left, $color-primary, $color-secondary);
+
+                &:hover{
+                opacity: .9;
+            }
+            }
+        }
+}
+
+.section-howitworks {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    padding: 3rem 1.5rem 3rem 1.5rem;    
+}
+
+.section-restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 1.5rem 3rem 1.5rem;  
+}
