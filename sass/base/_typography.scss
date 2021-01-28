@@ -15,6 +15,11 @@ body {
             display: block;
             font-size: 3.5rem;
         }
+
+        &--footer {
+            color: $color-white;
+            font-size: 2rem;
+        }
 }
 
 .heading-secondary {
@@ -32,5 +37,15 @@ body {
 .fas.fa-store {
         font-size: 1.5rem;
 }
+
+.fas.fa-utensils {
+    width: 2rem;
+}
+
+ 
+
+
+
+
 
 
