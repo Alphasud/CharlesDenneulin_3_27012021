@@ -15,4 +15,9 @@
     &__link a:nth-child(n+2) {
         margin-left: .5rem;
     }
+
+    &--menu {
+        position: relative;
+        top: 25rem;
+    }
 }

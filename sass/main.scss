@@ -9,10 +9,12 @@
 
 @import "components/explanation-card";
 @import "components/restaurant-card";
+@import "components/menu";
+@import "components/button";
 
-@import "layouts/header.scss";
-@import "layouts/footer.scss";
-@import "layouts/navigation.scss";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/navigation";
 
 @import "pages/home";
 @import "pages/menu";
