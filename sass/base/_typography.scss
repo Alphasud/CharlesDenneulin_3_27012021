@@ -3,7 +3,7 @@ body {
     font-weight: 300;
     line-height: 1.5;
     color: $color-black;
-    background-color: $color-background-dark;
+    background-color: $color-background-margin;
 }
 
 .heading-primary {
@@ -29,6 +29,8 @@ body {
 
 .heading-secondary {
     font-size: $title-font-size;
+    display: flex;
+    flex: 100%;
 }
 
 .line {

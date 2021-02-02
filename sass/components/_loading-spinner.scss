@@ -1,21 +1,29 @@
 .loading-spinner {
     background-color: $color-background-dark;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
     z-index: 100;
-    animation: page-load 5s 1 ease forwards;
+    position: relative;
+    animation: spinner-load ease forwards;
+    animation-duration: 1s;
+}
+
+.wrapper {
+    background-color: transparent;
+    height: 100vh;
+    overflow: hidden;
+    animation: wrapper-anim .1s ease 1.5s forwards;
 }
 
 .homepage {
     background-color: $color-background-dark;
-    position: fixed;
     z-index: 99;
-    animation: homepage-load 5s 1 forwards;
+    height: 0%;
+    position: fixed;
+    animation: homepage-load 5s ease forwards;
 }
 
 .spinner {

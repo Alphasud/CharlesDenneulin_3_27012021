@@ -9,24 +9,34 @@
     }
 }
 
-@keyframes page-load {
+@keyframes wrapper-anim {
+    from {
+    height: 100vh;
+    }
+    to {
+    height: 0vh;
+    }
+}
+
+@keyframes spinner-load {
     0% {
-        opacity: 1;
         z-index: 100;
     }
     100% {
-        opacity: 0;
         z-index: 99;
     }
 }
 
 @keyframes homepage-load {
     from {
+        position: fixed;
+        height: 0;
         z-index: 99;
         opacity: 0;
     }
 
     to {
+        height: 100%;
         opacity: 1;
         z-index: 100;
         position: relative;

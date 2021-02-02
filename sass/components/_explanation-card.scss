@@ -2,8 +2,8 @@
     background-color: $color-background-light;
     border-radius: 20px;
     height: 7rem;
-    width: 30.6rem;
-    box-shadow: $shadow-light;
+    width: 100%;
+    max-width: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -12,6 +12,7 @@
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     font-size: $default-font-size;
+    box-shadow: $shadow-light;
     transition: background-color .2s;
     &:not(:last-child) {margin-bottom: 2rem;}
     &:nth-child(2) {margin-top: 2rem;}

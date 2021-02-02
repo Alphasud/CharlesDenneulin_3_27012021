@@ -1,12 +1,20 @@
 .restaurant-card {
-    height: 23rem;
-    width: 33rem;
-    border-radius: 17px;
-    margin : 0 auto;
     background-color: $color-white;
+    border-radius: 17px;
+    height: 23rem;
+    width: 100%;
+    max-width: 35rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
     box-shadow: $shadow-light;
+    @media screen and (min-width: 688px) {
+           margin: 1rem;
+        } 
     &:nth-child(2) {
         margin-top: 2rem;
+        @media screen and (min-width: 688px) {
+           margin-top: 1rem;
+        } 
     }
     &:not(:last-child) {
         margin-bottom: 2rem;
