@@ -11,9 +11,11 @@
     }
     &__link:nth-child(2){
         margin-top: 1rem;
+        
     }
     &__link a:nth-child(n+2) {
         margin-left: .5rem;
+        font-weight: 500;
     }
 
     &--menu {

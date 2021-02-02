@@ -37,6 +37,64 @@ a {
     transform: translateY(0px);
   }
 }
+@keyframes page-load {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: 99;
+  }
+}
+@keyframes homepage-load {
+  from {
+    z-index: 99;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: 100;
+    position: relative;
+  }
+}
+@keyframes anim-icon {
+  0% {
+    transform: translateY(10px);
+    color: #99E2D0;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+    color: #9356DC;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse-icon {
+  0% {
+    transform: scale(1);
+    color: #99E2D0;
+  }
+  100% {
+    transform: scale(1.5);
+    color: #9356DC;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -352,6 +410,64 @@ body {
   margin-bottom: 5rem;
 }
 
+.loading-spinner {
+  background-color: #EDEDED;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  animation: page-load 5s 1 ease forwards;
+}
+
+.homepage {
+  background-color: #EDEDED;
+  position: fixed;
+  z-index: 99;
+  animation: homepage-load 5s 1 forwards;
+}
+
+.spinner {
+  border: 2px solid #99E2D0;
+  border-top: 2px solid #9356DC;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  position: absolute;
+  animation: spin 1.5s cubic-bezier(0.66, 0.67, 0.25, 0.26) infinite both;
+}
+
+.animation {
+  font-size: 1.6rem;
+  color: #99E2D0;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.animation .fas.fa-carrot {
+  animation: 1s cubic-bezier(0.66, 0.67, 0.25, 0.26) 0s infinite alternate both anim-icon;
+}
+.animation .fas.fa-cheese {
+  animation: 1s cubic-bezier(0.66, 0.67, 0.25, 0.26) 0.1s infinite alternate both anim-icon;
+}
+.animation .fork {
+  animation: 1s cubic-bezier(0.66, 0.67, 0.25, 0.26) infinite alternate both pulse-icon;
+}
+.animation .fas.fa-drumstick-bite {
+  animation: 1s cubic-bezier(0.66, 0.67, 0.25, 0.26) 0.3s infinite alternate both anim-icon;
+}
+.animation .fas.fa-fish {
+  animation: 1s cubic-bezier(0.66, 0.67, 0.25, 0.26) 0.4s infinite alternate both anim-icon;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -385,6 +501,7 @@ body {
 }
 .footer__link a:nth-child(n+2) {
   margin-left: 0.5rem;
+  font-weight: 500;
 }
 .footer--menu {
   position: relative;
