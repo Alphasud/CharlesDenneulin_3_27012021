@@ -1,6 +1,8 @@
 .footer {
     background-color: $color-background-footer;
     color: $color-white;
+    max-width: 80rem;
+    margin: 0 auto;
     padding: 1rem 1.5rem 3rem 1.5rem;
     display: flex;
     flex-direction: column;

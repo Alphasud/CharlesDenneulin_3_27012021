@@ -31,7 +31,8 @@
 }
 
 .section-howitworks {
-    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,7 +43,8 @@
 
 
 .section-restaurants {
-    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

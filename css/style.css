@@ -27,6 +27,25 @@ a {
   color: #FFFF;
 }
 
+.wrapper-color {
+  width: 100%;
+}
+.wrapper-color--howitworks {
+  background-color: #FFFF;
+}
+.wrapper-color--restaurant {
+  background-color: #EDEDED;
+}
+.wrapper-color--footer {
+  background-color: #2b2a2a;
+}
+
+.page-wrapper {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
 @keyframes delay-load {
   from {
     opacity: 0;
@@ -39,9 +58,11 @@ a {
 }
 @keyframes wrapper-anim {
   from {
+    opacity: 1;
     height: 100vh;
   }
   to {
+    opacity: 0;
     height: 0vh;
   }
 }
@@ -451,7 +472,7 @@ body {
   background-color: transparent;
   height: 100vh;
   overflow: hidden;
-  animation: wrapper-anim 0.1s ease 1.5s forwards;
+  animation: wrapper-anim 0.1s cubic-bezier(0, 2, 0, 1) 1.5s forwards;
 }
 
 .homepage {
@@ -520,6 +541,8 @@ body {
 .footer {
   background-color: #2b2a2a;
   color: #FFFF;
+  max-width: 80rem;
+  margin: 0 auto;
   padding: 1rem 1.5rem 3rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -569,7 +592,8 @@ body {
 }
 
 .section-howitworks {
-  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -579,7 +603,8 @@ body {
 }
 
 .section-restaurants {
-  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -638,19 +663,6 @@ body {
 .order {
   display: flex;
   justify-content: center;
-}
-
-@media screen and (min-width: 800px) {
-  .loading-spinner {
-    max-width: 80rem;
-    margin: 0 auto;
-  }
-
-  .page-wrapper {
-    position: relative;
-    max-width: 80rem;
-    margin: 0 auto;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
