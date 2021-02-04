@@ -7,7 +7,6 @@
         color: transparent;
         -webkit-background-clip: text !important;
         -moz-background-clip: text !important;
-        background-clip: text !important;
         -webkit-text-fill-color:transparent;
         background: -webkit-linear-gradient(bottom left, $color-primary, $color-secondary);
         background: -moz-linear-gradient(bottom left, $color-primary, $color-secondary);
@@ -42,7 +41,6 @@
     opacity: 0;
         -webkit-background-clip: text !important;
         -moz-background-clip: text !important;
-        background-clip: text !important;
         -webkit-text-fill-color:transparent;
         background: -webkit-linear-gradient(bottom left, $color-primary, $color-secondary);
         background: -moz-linear-gradient(bottom left, $color-primary, $color-secondary);

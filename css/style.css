@@ -528,7 +528,6 @@ body {
   color: transparent;
   -webkit-background-clip: text !important;
   -moz-background-clip: text !important;
-  background-clip: text !important;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(bottom left, #9356DC, #FF79DA);
   background: -moz-linear-gradient(bottom left, #9356DC, #FF79DA);
@@ -563,7 +562,6 @@ body {
   opacity: 0;
   -webkit-background-clip: text !important;
   -moz-background-clip: text !important;
-  background-clip: text !important;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(bottom left, #9356DC, #FF79DA);
   background: -moz-linear-gradient(bottom left, #9356DC, #FF79DA);
