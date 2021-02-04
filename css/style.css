@@ -295,34 +295,6 @@ body {
 .restaurant-card__description__title__location {
   font-weight: 300;
 }
-.restaurant-card__description .fas.fa-heart {
-  position: absolute;
-  right: 1.9rem;
-  font-size: 2.8rem;
-  opacity: 0;
-  color: transparent;
-  background-clip: text !important;
-  -webkit-background-clip: text;
-  background: -webkit-linear-gradient(bottom left, #9356DC, #FF79DA);
-  background: -moz-linear-gradient(bottom left, #9356DC, #FF79DA);
-  background: linear-gradient(to bottom left, #9356DC, #FF79DA);
-  transition: opacity 0.2s ease-in-out;
-}
-.restaurant-card__description .fas.fa-heart:hover {
-  opacity: 1;
-  z-index: 1000;
-}
-.restaurant-card__description .far.fa-heart {
-  color: #000;
-  position: absolute;
-  right: 2rem;
-  font-size: 2.6rem;
-}
-.restaurant-card__description .far.fa-heart:hover {
-  opacity: 0;
-  z-index: -999;
-  font-size: 1.6rem;
-}
 
 .menu-card {
   background-color: #FFFF;
@@ -521,6 +493,73 @@ body {
   animation: 1s cubic-bezier(0.66, 0.67, 0.25, 0.26) 0.4s infinite alternate both anim-icon;
 }
 
+.heart-full-homepage {
+  position: absolute;
+  right: 1.9rem;
+  font-size: 2.8rem;
+  opacity: 0;
+  color: transparent;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(bottom left, #9356DC, #FF79DA);
+  background: -moz-linear-gradient(bottom left, #9356DC, #FF79DA);
+  background: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  transition: opacity 0.2s ease-in-out, transform 0.4s cubic-bezier(0.74, 1.13, 1, 1.63);
+}
+.heart-full-homepage:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1000;
+}
+
+.heart-empty-homepage {
+  color: #000;
+  position: absolute;
+  right: 2rem;
+  font-size: 2.6rem;
+}
+.heart-empty-homepage:hover {
+  opacity: 0;
+  z-index: -999;
+  font-size: 1.6rem;
+}
+
+.heart-full-menu {
+  position: absolute;
+  right: 2rem;
+  top: 1.95rem;
+  font-size: 2rem;
+  color: transparent;
+  opacity: 0;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(bottom left, #9356DC, #FF79DA);
+  background: -moz-linear-gradient(bottom left, #9356DC, #FF79DA);
+  background: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  transition: opacity 0.2s ease-in-out, transform 0.4s cubic-bezier(0.74, 1.13, 1, 1.63);
+}
+.heart-full-menu:hover {
+  transform: scale(1.4);
+  opacity: 1;
+  z-index: 1000;
+}
+
+.heart-empty-menu {
+  position: absolute;
+  right: 2rem;
+  font-size: 2rem;
+  color: #000;
+}
+.heart-empty-menu:hover {
+  opacity: 0;
+  z-index: -999;
+  font-size: 1.6rem;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -643,7 +682,6 @@ body {
 }
 .menu__heading .far {
   align-self: center;
-  font-size: 2rem;
 }
 
 .section-menu {
