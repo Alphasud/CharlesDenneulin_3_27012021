@@ -258,6 +258,7 @@ body {
   display: contents;
 }
 .restaurant-card__picture {
+  display: inline;
   position: relative;
 }
 .restaurant-card__picture__sticker {
@@ -349,11 +350,14 @@ body {
   padding: 1rem;
 }
 .menu-card__checkbox-label__text__name {
+  display: block;
+  font-weight: 700;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 1.9rem;
 }
 .menu-card__checkbox-label__text__description {
+  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
 }

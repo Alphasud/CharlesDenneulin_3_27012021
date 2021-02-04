@@ -54,11 +54,14 @@
       align-items: center;
       padding: 1rem;
       &__name {
+        display: block;
+        font-weight: 700;
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: $menu-name-size;
       }
       &__description {
+        display: block;
         overflow: hidden;
         text-overflow: ellipsis;
       }
