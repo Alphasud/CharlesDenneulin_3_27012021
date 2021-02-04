@@ -1,4 +1,5 @@
 .heart-full-homepage  {
+        cursor: pointer;
         position: absolute;
         right: 1.9rem;
         font-size: 2.8rem;
@@ -32,6 +33,7 @@
 }
 
 .heart-full-menu {
+    cursor: pointer;
     position: absolute;
     right: 2rem;
     top: 1.95rem;
@@ -64,3 +66,8 @@
          font-size: $default-font-size;
             }
 }
+
+
+
+
+
