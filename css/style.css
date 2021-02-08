@@ -363,7 +363,7 @@ body {
   cursor: pointer;
 }
 .menu-card__checkbox-label__text {
-  width: 70%;
+  width: 90%;
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -376,16 +376,17 @@ body {
   font-weight: 700;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 .menu-card__checkbox-label__text__description {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 1.4rem;
 }
 .menu-card__checkbox-label__price {
   display: flex;
-  width: 30%;
+  width: 10%;
   height: 100%;
   padding-bottom: 1.6rem;
   padding-right: 1.5rem;
@@ -411,13 +412,13 @@ body {
   transform: rotate(-180deg);
   color: #FFFF;
   font-size: 2rem;
-  transition: opacity 0.2s ease-in-out, transform 0.4s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
 }
 .menu-card__checkbox-label:hover .menu-card__checkbox-label__price {
   width: 15%;
 }
 .menu-card__checkbox-label:hover .menu-card__checkbox-label__check {
-  width: 15%;
+  width: 20%;
 }
 .menu-card__checkbox-label:hover .fas {
   opacity: 1;
@@ -453,6 +454,13 @@ body {
   margin-bottom: 5rem;
 }
 
+.wrapper {
+  background-color: transparent;
+  height: 100vh;
+  overflow: hidden;
+  animation: wrapper-anim 0.1s cubic-bezier(0, 2, 0, 1) 1.5s forwards;
+}
+
 .loading-spinner {
   background-color: #dddddd;
   height: 100%;
@@ -463,14 +471,7 @@ body {
   z-index: 100;
   position: relative;
   animation: spinner-load ease forwards;
-  animation-duration: 1s;
-}
-
-.wrapper {
-  background-color: transparent;
-  height: 100vh;
-  overflow: hidden;
-  animation: wrapper-anim 0.1s cubic-bezier(0, 2, 0, 1) 1.5s forwards;
+  animation-duration: 2s;
 }
 
 .homepage {
